@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.textConatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.maintext {
+  font-size: 5.4rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+  text-align: left;
+}
+.describetext {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.719rem;
+  text-align: left;
+}
+.heroImageConatiner {
+  display: flex;
+  width: 30.5rem;
+  height: 36.1rem;
+}
+.image {
+  width: 32rem;
+  height: 36.15rem;
+}
+.herobuttonContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.heroButtons {
+  width: 11em;
+  padding: 1em;
+  border-radius: 5em;
+  border: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: inherit;
+  border: 1px solid #86cfd0;
+  color: white;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.buynftButton {
+  background-color: #8c8cda;
+}
+
+.sellnftButton {
+  background-color: transparent;
+  border-color: rgba(134, 207, 208, 1);
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .maintext {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .herobuttonContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .heroImageConatiner {
+    display: flex;
+    width: 22rem;
+    height: 21rem;
+  }
+  .image {
+    width: 20em;
+    height: 21em;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+}

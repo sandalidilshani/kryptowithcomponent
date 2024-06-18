@@ -1,0 +1,92 @@
+.footer {
+  padding: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 1rem;
+  min-width: 200px;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.columnList {
+  list-style: none;
+  padding: 0;
+}
+
+.columnList li {
+  margin-bottom: 0.5rem;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterInput {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.newsletterButton {
+  background-color: #6b21a8;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaHeading {
+    font-size: 1.5rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta {
+    padding: 0.1rem;
+  }
+
+  .ctaHeading {
+    font-size: 0.5rem;
+  }
+
+  .ctaText {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .footerContent {
+    flex-direction: column;
+  }
+}

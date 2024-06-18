@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.imageContainer {
+  display: flex;
+  position: relative;
+  width: 30.9rem;
+  height: 29.1rem;
+  flex: 1;
+}
+.textContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1;
+}
+
+.heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 4.3rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.79rem;
+}
+
+.button {
+  background-color: rgba(140, 140, 218, 1);
+  color: #fff;
+  height: 4.375rem;
+  width: 21.375rem;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageSize {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 900px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column-reverse;
+  }
+  .imageContainer {
+    width: 15.9rem;
+    height: 15.1rem;
+   
+  }
+  .image {
+    width: 16em;
+    height: 16em;
+  }
+}
